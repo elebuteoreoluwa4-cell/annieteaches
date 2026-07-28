@@ -134,7 +134,18 @@
     <div class="form-card">
       <h3>Reserve Your Free Spot</h3>
       <p>Free training for Nigerians who want to earn in dollars through ghostwriting.</p>
-      <a href="https://event.webinarjam.com/ykzylv/register/93gv4ksw" class="btn-register">Reserve My Free Spot →</a>
+    <a href="#" onclick="joinGroup(); return false;" class="btn-register">Reserve My Free Spot →</a>
+<script>
+function joinGroup() {
+  const groups = [
+    "https://chat.whatsapp.com/Chcb4vVQMbt0E7MV06gRsB?s=sh&p=i&ilr=2&amv=2",
+    "https://chat.whatsapp.com/KFtJQL9OqO7KJGTLbNFez9?s=cl&p=i&ilr=2&amv=2",
+    "https://chat.whatsapp.com/J9CAmwy4YaY8fL6dBYmjsH?s=cl&p=i&ilr=2&amv=2"
+  ];
+  const link = groups[Math.floor(Math.random() * groups.length)];
+  window.location.href = link;
+}
+ </script>
       <p class="form-note">Free to join. No payment needed. Unsubscribe anytime.</p>
     </div>
   </div>
@@ -220,8 +231,7 @@
 <!-- CTA BOTTOM -->
 <div class="cta-bottom">
   <h2>One Training. One Decision.<br/>One Year That Changes Everything.</h2>
-  <p>Free to attend. Starts tonight. Don't be late.</p>
-  <a href="https://event.webinarjam.com/ykzylv/register/93gv4ksw" class="btn-cta">Reserve My Free Spot →</a>
+  <a href="#" onclick="joinGroup(); return false;" class="btn-cta">Reserve My Free Spot →</a>
 </div>
 
 <footer>
