@@ -167,17 +167,6 @@
      <h3>Reserve Your Spot</h3>
       <p>Training for Nigerians who want to earn in dollars through ghostwriting.</p>
     <a href="#" onclick="joinGroup(); return false;" class="btn-register">Reserve Your Spot →</a>
-<script>
-function joinGroup() {
-  fbq('track', 'Lead');
-  ttq.track('Lead');
-  const groups = [
-    "."https://chat.whatsapp.com/BpSYanwmVJI6Rf49NxToP2?s=sh&p=i&mlu=0&amv=2",
-  ];
-  const link = groups[Math.floor(Math.random() * groups.length)];
-  window.location.href = link;
-}
- </script>
       <p class="form-note"> Limited Slot.</p>
     </div>
   </div>
@@ -269,6 +258,18 @@ function joinGroup() {
 <footer>
   © 2026 L·EARN Academy · Coach Annie &nbsp;·&nbsp; Results shared reflect individual experiences and will vary. This training is for educational purposes only.
 </footer>
+
+<script>
+function joinGroup() {
+  try { fbq('track', 'Lead'); } catch(e) {}
+  try { ttq.track('Lead'); } catch(e) {}
+  const groups = [
+    "https://chat.whatsapp.com/BpSYanwmVJI6Rf49NxToP2?s=sh&p=i&mlu=0&amv=2"
+  ];
+  const link = groups[Math.floor(Math.random() * groups.length)];
+  window.location.href = link;
+}
+</script>
 
 </body>
 </html>
